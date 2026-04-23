@@ -1,0 +1,161 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-red: #E31E24;
+  --color-brand-dark: #1A1A1A;
+  --color-brand-black: #0D0D0D;
+  --color-whatsapp: #25D366;
+
+  --font-heading: "Rajdhani", sans-serif;
+  --font-body: "Inter", sans-serif;
+}
+
+html {
+  scroll-behavior: auto;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-brand-black);
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+@media (pointer: fine) {
+  * {
+    cursor: none !important;
+  }
+}
+
+@utility glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@utility glass-card-dark {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Hero animations */
+@keyframes fade-in-up {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@utility animate-fade-in-up {
+  animation: fade-in-up 0.8s ease-out forwards;
+  opacity: 0;
+}
+
+@keyframes ken-burns {
+  0% { transform: scale(1.12); }
+  100% { transform: scale(1); }
+}
+
+@utility animate-ken-burns {
+  animation: ken-burns 10s ease-out forwards;
+}
+
+@keyframes overlay-fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@utility animate-overlay-fade {
+  animation: overlay-fade 1.5s ease-out forwards;
+  opacity: 0;
+}
+
+@keyframes line-grow {
+  from { height: 0; }
+  to { height: 2rem; }
+}
+
+@utility animate-line-grow {
+  animation: line-grow 1s ease-out 2s forwards;
+  height: 0;
+  overflow: hidden;
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 20px rgba(227, 30, 36, 0.3); }
+  50% { box-shadow: 0 0 40px rgba(227, 30, 36, 0.6); }
+}
+
+@utility animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+@keyframes counter-up {
+  from { opacity: 0; transform: translateY(20px) scale(0.9); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@utility animate-counter-up {
+  animation: counter-up 0.6s ease-out forwards;
+  opacity: 0;
+}
+
+/* Lightbox animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* Shine effect for cards */
+@utility shine-effect {
+  position: relative;
+  overflow: hidden;
+}
+
+.shine-effect::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -100%;
+  width: 60%;
+  height: 200%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.12),
+    transparent
+  );
+  transform: skewX(-20deg);
+  transition: left 0.7s ease;
+  pointer-events: none;
+}
+
+.shine-effect:hover::after {
+  left: 130%;
+}
+
+/* Tilt cards */
+.tilt-card {
+  transition: transform 0.15s ease-out;
+  will-change: transform;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-brand-black);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-brand-red);
+  border-radius: 4px;
+}
