@@ -11,13 +11,13 @@ export default function Hero() {
           src="/images/hero/capa.png"
           alt="EmbelezzeCar - Fachada da loja com BMW em destaque"
           className="w-full h-[120%] object-cover object-center animate-ken-burns"
-          style={{ transform: `translateY(${parallaxOffset}px) scale(${1.12 - Math.min(parallaxOffset * 0.0003, 0.12)})` }}
+          style={{ transform: `translateY(${parallaxOffset}px) scale(${1.12 - Math.min(parallaxOffset * 0.0003, 0.12)}) rotate(-1.5deg)` }}
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-brand-black/85 via-brand-black/60 to-transparent animate-overlay-fade" />
-        <div className="absolute inset-0 bg-gradient-to-t from-brand-black via-transparent to-brand-black/20 animate-overlay-fade" />
+        <div className="absolute inset-0 bg-gradient-to-r from-brand-black/75 via-brand-black/40 to-transparent animate-overlay-fade" />
+        <div className="absolute inset-0 bg-gradient-to-t from-brand-black/80 via-transparent to-brand-black/10 animate-overlay-fade" />
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 lg:px-8 w-full">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 lg:px-8 w-full pt-56">
         <div className="max-w-2xl">
           <div className="inline-flex items-center gap-2 bg-white/5 border border-white/10 backdrop-blur-sm rounded-full px-4 py-1.5 mb-6 animate-fade-in-up">
             <div className="w-1.5 h-1.5 bg-brand-red rounded-full animate-pulse" />
@@ -26,15 +26,14 @@ export default function Hero() {
             </span>
           </div>
 
-          <h1 className="font-heading font-bold text-4xl md:text-5xl lg:text-6xl leading-[0.95] mb-5 animate-fade-in-up" style={{ animationDelay: '0.25s' }}>
-            <span className="text-white">Seu carro merece</span>
+          <h1 className="font-heading font-bold text-3xl md:text-4xl lg:text-5xl leading-[1.1] mb-5 animate-fade-in-up" style={{ animationDelay: '0.25s' }}>
+            <span className="text-white">Seu carro está pedindo socorro</span>
             <br />
-            <span className="text-brand-red">o melhor.</span>
+            <span className="text-brand-red">— e a gente responde.</span>
           </h1>
 
           <p className="font-body text-base md:text-lg text-neutral-400 max-w-md mb-8 leading-relaxed animate-fade-in-up" style={{ animationDelay: '0.5s' }}>
-            Há mais de 15 anos cuidando de carros com excelência.
-            Qualidade que você pode ver e sentir.
+            Há 15 anos em Arujá, a EmbelezzeCar transforma carros comuns em carros que causam inveja — com técnica, produtos premium e resultado garantido.
           </p>
 
           <div className="flex items-center gap-4 animate-fade-in-up" style={{ animationDelay: '0.75s' }}>

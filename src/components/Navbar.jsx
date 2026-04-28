@@ -48,9 +48,6 @@ export default function Navbar() {
             <span className="font-heading font-bold text-2xl lg:text-3xl tracking-wider text-white group-hover:text-brand-red transition-colors duration-300">
               EMBELEZZE<span className="text-brand-red group-hover:text-white transition-colors duration-300">CAR</span>
             </span>
-            <span className="block text-[10px] tracking-[0.3em] text-neutral-400 uppercase font-body">
-              Os cuidados que seu carro precisa
-            </span>
           </div>
         </a>
 

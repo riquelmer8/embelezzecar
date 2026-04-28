@@ -18,16 +18,16 @@ export default function CTA() {
 
       <div className="relative z-10 max-w-5xl mx-auto px-4 lg:px-8 text-center">
         <RevealOnScroll>
-          <h2 className="font-heading font-bold text-4xl md:text-5xl lg:text-7xl text-white mb-6 leading-tight">
-            Pronto para transformar
+          <h2 className="font-heading font-bold text-4xl md:text-5xl lg:text-6xl text-white mb-6 leading-tight">
+            Agende agora e veja seu carro
             <br />
-            <span className="text-white/90">seu carro?</span>
+            <span className="text-white/90">com aparência de novo.</span>
           </h2>
         </RevealOnScroll>
 
         <RevealOnScroll delay={150}>
           <p className="font-body text-white/80 text-lg md:text-xl max-w-2xl mx-auto mb-10">
-            Entre em contato agora e agende seu horário. Atendimento rápido e profissional.
+            Fale direto pelo WhatsApp. Atendimento rápido, orçamento sem compromisso — sem sair de Arujá.
           </p>
         </RevealOnScroll>
 

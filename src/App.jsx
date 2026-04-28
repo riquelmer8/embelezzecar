@@ -3,12 +3,13 @@ import Lenis from 'lenis'
 
 import Navbar from './components/Navbar'
 import ProgressBar from './components/ProgressBar'
-import Cursor from './components/Cursor'
 import Hero from './components/Hero'
+import Pain from './components/Pain'
 import Services from './components/Services'
 import Differentials from './components/Differentials'
 import Portfolio from './components/Portfolio'
 import Location from './components/Location'
+import FAQ from './components/FAQ'
 import CTA from './components/CTA'
 import Footer from './components/Footer'
 import WhatsAppFloat from './components/WhatsAppFloat'
@@ -33,11 +34,11 @@ export default function App() {
 
   return (
     <>
-      <Cursor />
-      <ProgressBar />
+<ProgressBar />
       <Navbar />
       <Hero />
-      <DividerAngle from="#0D0D0D" to="#f5f5f5" />
+      <Pain />
+      <DividerAngle from="#1A1A1A" to="#f5f5f5" />
       <Services />
       <DividerWave from="#f5f5f5" to="#1A1A1A" />
       <Differentials />
@@ -45,6 +46,7 @@ export default function App() {
       <Portfolio />
       <DividerWave from="#f5f5f5" to="#1A1A1A" />
       <Location />
+      <FAQ />
       <CTA />
       <Footer />
       <WhatsAppFloat />

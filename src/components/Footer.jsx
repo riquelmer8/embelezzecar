@@ -112,9 +112,9 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="mailto:contato@embelezzecar.com.br" className="flex items-center gap-3 text-neutral-400 hover:text-brand-red transition-colors">
+                <a href="mailto:oficial01embelezzecar@gmail.com" className="flex items-center gap-3 text-neutral-400 hover:text-brand-red transition-colors">
                   <Mail size={16} className="text-brand-red shrink-0" />
-                  <span className="font-body text-sm">contato@embelezzecar.com.br</span>
+                  <span className="font-body text-sm">oficial01embelezzecar@gmail.com</span>
                 </a>
               </li>
               <li className="flex items-start gap-3">

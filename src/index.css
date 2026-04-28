@@ -23,11 +23,6 @@ body {
   overflow-x: hidden;
 }
 
-@media (pointer: fine) {
-  * {
-    cursor: none !important;
-  }
-}
 
 @utility glass-card {
   background: rgba(255, 255, 255, 0.05);

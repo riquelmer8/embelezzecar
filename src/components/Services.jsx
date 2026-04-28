@@ -6,6 +6,7 @@ const services = [
   {
     title: 'INSULFILM',
     image: '/images/servicos/insulfilm.jpg',
+    alt: 'Aplicação de insulfilm automotivo com proteção UV em carro na EmbelezzeCar Arujá SP',
     description: 'Películas automotivas de última geração com proteção UV e controle térmico. Maior conforto e privacidade.',
     benefits: ['Proteção UV 99%', 'Redução de calor', 'Garantia de fábrica'],
     whatsapp: '?text=Ol%C3%A1!%20Gostaria%20de%20or%C3%A7amento%20para%20INSULFILM.',
@@ -13,6 +14,7 @@ const services = [
   {
     title: 'POLIMENTO TÉCNICO',
     image: '/images/servicos/polimento.jpg',
+    alt: 'Polimento técnico removendo riscos e manchas da pintura de carro na EmbelezzeCar Arujá SP',
     description: 'Recuperação profunda da pintura original removendo riscos, manchas e imperfeições. Resultado espelhado garantido.',
     benefits: ['Remove riscos e manchas', 'Brilho espelhado', 'Profissionais certificados'],
     whatsapp: '?text=Ol%C3%A1!%20Gostaria%20de%20or%C3%A7amento%20para%20POLIMENTO.',
@@ -20,6 +22,7 @@ const services = [
   {
     title: 'VITRIFICAÇÃO',
     image: '/images/servicos/vitrificacao.jpg',
+    alt: 'Vitrificação automotiva com nanotecnologia aplicada em carro na EmbelezzeCar Arujá SP',
     description: 'Proteção de longa duração com nanotecnologia. Cria camada protetora contra agentes externos e facilita limpeza.',
     benefits: ['Proteção até 2 anos', 'Nanotecnologia', 'Efeito autolimpante'],
     whatsapp: '?text=Ol%C3%A1!%20Gostaria%20de%20or%C3%A7amento%20para%20VITRIFICA%C3%87%C3%83O.',
@@ -27,6 +30,7 @@ const services = [
   {
     title: 'HIGIENIZAÇÃO COMPLETA',
     image: '/images/servicos/higienizacao.jpg',
+    alt: 'Higienização completa do interior de carro eliminando odores e bactérias na EmbelezzeCar Arujá SP',
     description: 'Limpeza profunda interna e externa com produtos especializados. Eliminação de odores, bactérias e ácaros.',
     benefits: ['Limpeza profunda', 'Elimina odores', 'Produtos especializados'],
     whatsapp: '?text=Ol%C3%A1!%20Gostaria%20de%20or%C3%A7amento%20para%20HIGIENIZA%C3%87%C3%83O.',
@@ -34,6 +38,7 @@ const services = [
   {
     title: 'RECUPERAÇÃO DE FARÓIS',
     image: '/images/servicos/farois.jpg',
+    alt: 'Recuperação de faróis amarelados e opacos de carro na EmbelezzeCar Arujá SP',
     description: 'Restauração de faróis amarelados e opacos. Melhora a iluminação e a aparência do veículo.',
     benefits: ['Remove amarelamento', 'Melhora iluminação', 'Proteção UV'],
     whatsapp: '?text=Ol%C3%A1!%20Gostaria%20de%20or%C3%A7amento%20para%20RECUPERA%C3%87%C3%83O%20DE%20FAR%C3%93IS.',
@@ -41,6 +46,7 @@ const services = [
   {
     title: 'DETAILING PREMIUM',
     image: '/images/servicos/detailing.jpg',
+    alt: 'Detailing premium completo em carro de luxo na EmbelezzeCar Arujá SP',
     description: 'Serviço completo de alta performance. Seu carro recebe todos os cuidados necessários para brilhar como novo.',
     benefits: ['Pacote completo', 'Alta performance', 'Resultado premium'],
     whatsapp: '?text=Ol%C3%A1!%20Gostaria%20de%20or%C3%A7amento%20para%20DETAILING%20PREMIUM.',
@@ -60,7 +66,7 @@ function ServiceCard({ service }) {
       <div className="relative h-56 overflow-hidden shine-effect">
         <img
           src={service.image}
-          alt={service.title}
+          alt={service.alt}
           className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />

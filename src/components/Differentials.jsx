@@ -3,12 +3,12 @@ import { RevealOnScroll } from '../hooks/useScrollReveal'
 import { useCounter } from '../hooks/useCounter'
 
 const differentials = [
-  'Profissionais certificados e treinados constantemente',
-  'Produtos de primeira linha importados e nacionais',
-  'Equipamentos de última geração para melhor resultado',
-  'Atendimento personalizado e orçamento sem compromisso',
-  'Garantia em todos os serviços executados',
-  'Localização privilegiada em Arujá',
+  'Pintura restaurada com polimento técnico — riscos e manchas somem de verdade',
+  'Proteção de até 2 anos com vitrificação nanotecnológica',
+  'Insulfilm com bloqueio de 99% de UV e redução real de calor',
+  'Higienização completa: elimina bactérias, ácaros e odores do interior',
+  'Faróis recuperados: mais visibilidade, carro mais bonito',
+  'Atendimento personalizado — sem enrolação, com resultado',
 ]
 
 function StatCard({ value, label, suffix = '', hasStars = false }) {
@@ -62,9 +62,9 @@ export default function Differentials() {
               </h2>
 
               <p className="font-body text-neutral-400 text-lg leading-relaxed mb-10">
-                Com mais de <strong className="text-white">15 anos de experiência</strong> no
-                mercado de estética automotiva, a EmbelezzeCar se consolidou como
-                referência em Arujá e região. Nossa equipe é apaixonada pelo que faz.
+                Mais de <strong className="text-white">2.500 carros atendidos</strong>. 15 anos de história em Arujá. Avaliação 5 estrelas. E uma equipe que trata o seu carro como se fosse o dela.
+                <br /><br />
+                <span className="text-white">Não é papo. É resultado.</span> Veja o portfólio e decida você mesmo.
               </p>
             </RevealOnScroll>
 

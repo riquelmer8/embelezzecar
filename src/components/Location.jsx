@@ -17,8 +17,8 @@ const contactInfo = [
   {
     icon: Mail,
     title: 'E-MAIL',
-    lines: ['contato@embelezzecar.com.br'],
-    href: 'mailto:contato@embelezzecar.com.br',
+    lines: ['oficial01embelezzecar@gmail.com'],
+    href: 'mailto:oficial01embelezzecar@gmail.com',
   },
   {
     icon: Clock,
@@ -111,7 +111,7 @@ export default function Location() {
           <RevealOnScroll direction="right">
             <div className="glass-card-dark rounded-2xl overflow-hidden min-h-[500px]">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3661.234567890123!2d-46.32!3d-23.39!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDIzJzI0LjAiUyA0NsKwMTknMTIuMCJX!5e0!3m2!1spt-BR!2sbr!4v1234567890123!5m2!1spt-BR!2sbr"
+                src="https://maps.google.com/maps?q=Av.+dos+Expedicion%C3%A1rios%2C+341A%2C+Aruj%C3%A1%2C+SP&t=&z=17&ie=UTF8&iwloc=&output=embed"
                 className="w-full h-full min-h-[500px]"
                 style={{ border: 0, filter: 'grayscale(10%) brightness(95%)' }}
                 allowFullScreen
